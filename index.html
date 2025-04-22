@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colby Trimble</title>
+    <script src="js/bootstrap.js"></script>
+    <link rel="icon" type="image/x-icon" href="../media/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        body {
+            background-image: url("images/bg.jpg");
+        }
+
+        .carousel-item.active .carousel-caption {
+            padding-left: 10%;
+            padding-right: 10%;
+            text-wrap: pretty;
+
+            width: 200%;
+            height: 200%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            background: rgba(0,0,0,60%);
+        }
+        </style>
+</head>
+<body>
+
+<nav class="ps-3 navbar navbar-expand-lg navbar-light bg-body-secondary bg-opacity-75">
+    <a class="navbar-brand" href="#">
+        <img class="rounded-1 me-2" src="images/what.png" title="Pretend this is a professional mugshot (i do not currently have one)" alt="Me" height="70" width="70"/>
+        Colby's Cool Lil Portfolio
+    </a>
+    <div class="navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#stuff">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact Info</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="mt-2 container bg-opacity-50 bg-light rounded-2" id="about">
+    <h1>Colby Trimble</h1>
+    <h2>About Me</h2>
+    <p>My name is Colby, and I somewhat know how to program. I can also make sick music if that's your thing</p>
+</div>
+
+<div class="container bg-opacity-50 bg-light rounded-2" id="experience">
+    <h2>Things I Know</h2>
+        <ul>
+            <li>Programming Languages - Java, C, C#</li>
+            <li>Scripting languages - Bash, Perl, JavaScript</li>
+            <li>Mobile development - Android applications, Swift, Xamarin.Forms</li>
+            <li>Web Development - HTML/CSS, Vue, Node.js, Blazor</li>
+            <li>Networking</li>
+            <li>Hardware</li>
+            <li>Systems Administration - Windows Server, Ubuntu Server</li>
+        </ul>
+</div>
+
+<div class="container bg-opacity-50 bg-light rounded-2 pb-1 mb-3" id="stuff">
+    <h2>Some Stuff I've Done</h2>
+    <div class="mb-3">
+        <h3>Polytech Paramedic Paradocs</h3>
+        A program built for Saskatchewan Polytechnic's paramedic programs to digitize documents and make them more
+        easily accessible to both faculty and students. The program was built as a part of our second year classes,
+        simulating a real-world programming project using test-driven development and sprints.<br>
+        Contributions include initial search features, edit forms, dynamic QR code generation, basic chat feature,
+        and consolidation of database models early on.<br>
+        <a href="#">Link for this one is unavailable. Sorry!</a>
+        <!-- collapsed text -->
+        <div id="dropdown1" class="mt-1">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            View Reflection
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse1" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        Being a project that spanned nearly 8 months, there was lots of time spent making mistakes,
+                        poor decisions, and appropriately making up for those either quickly or struggling to deal with
+                        them towards the end. The entire class cemented the importance of good communication, planning,
+                        and overall good programming practices in a production application. A full stack application,
+                        once somewhat developed, has the potential to be easily maintained should it be set up
+                        appropriately. One of my biggest takeaways is that starting something like this from the ground
+                        up can be extremely difficult, especially with no notion of what a project of this scope should
+                        look like. After a fair bit of fumbling, we as a group managed to pull together what our
+                        instructors say is "a usable application, which not many students end up with in the end."
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- carousel -->
+        <div id="carousel1" class="carousel slide w-100 mt-2 rounded" data-bs-ride="carousel">
+            <!-- indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<!--                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>-->
+<!--                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
+            </div>
+            <!-- images -->
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="../media/compress%20som.jpg" alt="" class="d-block w-100"/>
+<!--                    <div class="carousel-caption text-start d-block d-md-block top-0 m-sm-0 m-4"><p></p>></div>-->
+                </div>
+            </div>
+            <!-- controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <h3>Bubble Brawl (Saskatoon Global Game Jam 2025)</h3>
+        A quick game built in Godot with six others for Saskatoon Global Game Jam 2025.
+        <br>Contributions include sound design and sound/audio programming.<br>
+        <a href="https://ltngkarbn.itch.io/bubble-brawl">itch.io Page</a>
+        <!-- collapsed text -->
+        <div id="dropdown2" class="mt-1">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                            View Reflection
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse2" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        As a quick 48-hour jam, there was a fair bit of assumption that things would come together
+                        quickly and nicely, but reality set in quickly when things were not necessarily going smoothly
+                        and we ended up with not as much as we wanted to have implemented. With no prior knowledge of
+                        how much effort and time even a short game takes to make, I especially underestimated how much
+                        effort needed to go into the entire project. Learning a new language in a short period of time
+                        is also no simple feat, and I found myself scrambling to understand even something that seems
+                        as simple as Godot. While I'm still proud of the work I did, I also acknowledge that I have
+                        previously done better and had I some time to properly shake a bit of rust off, would have also
+                        been able to provide better for this project as well.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- carousel -->
+<!--        <div id="carousel2" class="carousel slide w-100 mt-2 rounded" data-bs-ride="carousel">-->
+<!--            &lt;!&ndash; indicators &ndash;&gt;-->
+<!--            <div class="carousel-indicators">-->
+<!--                <button type="button" data-bs-target="#carousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; images &ndash;&gt;-->
+<!--            <div class="carousel-inner rounded">-->
+<!--                <div class="carousel-item active">-->
+<!--&lt;!&ndash;                    <img src="../images/bubble1.jpg" alt="" class="d-block w-100"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="carousel-caption text-start d-block d-md-block top-0 m-sm-0 m-4"><p></p></div>&ndash;&gt;-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; controls &ndash;&gt;-->
+<!--            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">-->
+<!--                <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--                <span class="visually-hidden">Previous</span>-->
+<!--            </button>-->
+<!--            <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">-->
+<!--                <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--                <span class="visually-hidden">Next</span>-->
+<!--            </button>-->
+<!--        </div>-->
+    </div>
+
+    <div class="mb-3">
+        <h3>Album "Database"</h3>
+        A spreadsheet full of information about nearly 4000 albums to view stats related to me and my friends' favorite
+        albums. Initially built as an exercise in Microsoft Excel to familiarize myself with formulas and programming in
+        Visual Basic Script, it quickly grew into a passion project of hundreds of hours of manually entered data and
+        automation into what is essentially a silly database in a spreadsheet. Alongside an easily filtered list, there
+        are statistic tables for average rank, top and lowest albums, highest and total number of albums ranked per year
+        and decade, and number of albums per genre and country. There are formulas abound and dynamically building
+        spreadsheets according to a numbered list of albums, provided by the user. Attached is my personal copy, so you
+        can judge me based on my tastes.<br>
+        <a href="https://saskpolytech-my.sharepoint.com/:x:/g/personal/trimble9848_saskpolytech_ca/EWprWxF4wBxPg9InGEHP7UoBdk0HDF-b_Kn6aVnbTOTgIA?e=25Z4AH">
+            Download/View
+        </a> (only works on desktop Excel due to excessive XLOOKUP and VBS)
+        <!-- collapsed text -->
+        <div id="dropdown3" class="mt-1">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                            View Reflection
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse3" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        While this is not necessarily a professional (or necessarily useful) endeavour, it provided a
+                        great deal of insight in the workings of Excel, how databases should or could be set up,
+                        processing data, and calculating statistics, as well as just being something fun to look at and
+                        examine. While not ultimately something I would necessarily continue to develop or maintain far
+                        into the future, it may be something worth turning into a separate application for extra
+                        practice with other languages and concepts.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- carousel -->
+<!--        <div id="carousel3" class="carousel slide w-100 mt-2 rounded" data-bs-ride="carousel">-->
+<!--            &lt;!&ndash; indicators &ndash;&gt;-->
+<!--            <div class="carousel-indicators">-->
+<!--                <button type="button" data-bs-target="#carousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; images &ndash;&gt;-->
+<!--            <div class="carousel-inner rounded">-->
+<!--                <div class="carousel-item active">-->
+<!--                    <img src="../images/compress%20som.jpg" alt="" class="d-block w-100"/>-->
+<!--                    &lt;!&ndash;                    <div class="carousel-caption text-start d-block d-md-block top-0 m-sm-0 m-4"><p></p>></div>&ndash;&gt;-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; controls &ndash;&gt;-->
+<!--            <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">-->
+<!--                <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--                <span class="visually-hidden">Previous</span>-->
+<!--            </button>-->
+<!--            <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">-->
+<!--                <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--                <span class="visually-hidden">Next</span>-->
+<!--            </button>-->
+<!--        </div>-->
+    </div>
+</div>
+
+
+<footer class="container text-center bg-opacity-25 bg-success rounded-2" id="contact">
+    <p>copyright 2025 - Colby Trimble</p>
+    <p>mail - <a href="mailto:crtrimble13@gmail.com">crtrimble13@gmail.com</a></p>
+    <p>linkedin - <a href="#">(would go here if I had one)</a></p>
+</footer>
+
+</body>
+</html>
